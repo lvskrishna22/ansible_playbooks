@@ -1,19 +1,11 @@
+---
 - hosts: all
   tasks:
   - name: create directory
     file:
-     path: /home/ansible/testdirectory
-     state: directory
+      path: /home/ansible/testdirectory
+      state: directory
   - name: create file
     file:
-     path: /home/ansible/testfile
-     state: touch
-
----
-- hosts: win
-  tasks:
-    - name: create directory on windows
-      win_file:
-        path: 'c:\temp'
-        state: directory
-
+      path: /home/ansible/testfile
+      state: touch
