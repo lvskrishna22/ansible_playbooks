@@ -1,6 +1,6 @@
 
 ---
-- hosts: 13.58.70.6 
+- hosts: centos
   become: yes
   roles:
   - apache
